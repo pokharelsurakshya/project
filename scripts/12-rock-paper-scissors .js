@@ -48,6 +48,13 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         playGame('paper')
       });
 
+
+       document.querySelector('.js-scissors-button')
+      .addEventListener('click', () => {
+        playGame('scissors')
+      });
+
+    document.body.
     function playGame(playerMove){
 
     const computerMove = pickComputerMove();
